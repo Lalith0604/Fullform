@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Short Form Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1><img src="Screenshot 2024-10-19 200022.png" alt=""></h1>
+        
+        <form id="converterForm">
+            <label for="convertOption">Convert:</label>
+            <select id="convertOption">
+                <option value="shortToFull">Short to Full</option>
+                <option value="fullToShort">Full to Short</option>
+            </select>
+
+            <label for="shortForm">Enter Short or Full Form:</label>
+            <input type="text" id="shortForm" name="shortForm" autocomplete="off" required>
+            <button type="submit">Convert</button>
+
+            
+        </form>
+
+        <p id="output"></p>
+
+        <!-- Button for voice input -->
+        <button id="voiceInput">Use Voice Input</button>
+        <h2>Suggest a New Short Form</h2>
+        <form id="suggestForm">
+            <input type="text" id="newShortForm" placeholder="Suggest Short Form" required>
+            <input type="text" id="newFullForm" placeholder="Suggest Full Form" required>
+            <button type="submit">Submit Suggestion</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
